@@ -6,7 +6,7 @@ function scaryClown() {
     });
   }
   
-  async function msg() {
+  const msg = async () => {
     const msg = await scaryClown();
     console.log('Message:', msg);
   }
