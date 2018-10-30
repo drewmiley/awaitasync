@@ -14,6 +14,6 @@ const watchOverSomeoneWatchingSomeoneDoingSomething = async () => {
   return something + ' and I watched as well'
 }
 
-watchOverSomeoneWatchingSomeoneDoingSomething().then((res) => {
+watchOverSomeoneWatchingSomeoneDoingSomething().then(res => {
   console.log(res)
 })
