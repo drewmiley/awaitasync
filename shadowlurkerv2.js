@@ -1,30 +1,31 @@
-function who() {
+const who = () => {
   return new Promise(resolve => {
     setTimeout(() => {
-      resolve('scary clown');
-    }, 200);
-  });
+      resolve('scary clown')
+    }, 200)
+  })
 }
 
-function what() {
+const what = () => {
   return new Promise(resolve => {
     setTimeout(() => {
-      resolve('lurks');
-    }, 300);
-  });
+      resolve('lurks')
+    }, 300)
+  })
 }
 
-function where() {
+const where = () => {
   return new Promise(resolve => {
     setTimeout(() => {
-      resolve('in the shadows');
-    }, 500);
-  });
+      resolve('in the shadows')
+    }, 500)
+  })
 }
 
-async function msg() {
-  const [a, b, c] = await Promise.all([who(), what(), where()]);
-  console.log(`${ a } ${ b } ${ c }`);
+const msg = async () => {
+  const [a, b, c] = await Promise.all([who(), what(), where()])
+  console.log(`${a} ${b} ${c}`)
 }
-  
-msg(); // scary clown lurks in the shadows <-- after 500ms
+
+// scary clown lurks in the shadows <-- after 500ms
+msg()
