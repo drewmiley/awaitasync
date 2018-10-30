@@ -1,4 +1,4 @@
-var fetch = require("node-fetch");
+var fetch = require('node-fetch')
 
 const getFirstUserDataPromises = (url) => {
   return fetch(url) // get users list

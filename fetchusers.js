@@ -1,4 +1,4 @@
-const fetch = require('node-fetch');
+const fetch = require('node-fetch')
 
 const fetchUsers = async endpoint => {
   const res = await fetch(endpoint)
@@ -7,4 +7,4 @@ const fetchUsers = async endpoint => {
   console.log(usernames)
 }
 
-fetchUsers('https://jsonplaceholder.typicode.com/users');
+fetchUsers('https://jsonplaceholder.typicode.com/users')
